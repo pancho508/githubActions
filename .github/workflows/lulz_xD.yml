@@ -3,8 +3,8 @@ name: CRON JOB TEST
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  ' 0 0 3 ? * *'
-    - cron:  ' 18 11 * * *'
+    # - cron:  ' 0 0 3 ? * *'
+    - cron:  ' 22 11 * * *'
 
 
 jobs:
