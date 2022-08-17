@@ -1,0 +1,16 @@
+name: CRON JOB TEST
+
+on:
+schedule:
+  # * is a special character in YAML so you have to quote this string
+  - cron:  ' 0 0 3 ? * *'
+  - cron:  ' 15 11 * * *'
+
+
+jobs:
+  Explore-GitHub-Actions:
+    # runs-on: ubuntu-latest
+    # runs-on: macos-11
+    runs-on: windows-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
